@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	go db.ConnectToDB()
+	db.ConnectToDB()
+	db.SyncDatabase()
 	routes.Routers()
 }
